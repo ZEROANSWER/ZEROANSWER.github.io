@@ -1,0 +1,222 @@
+/* Homepage cards and research-interest components. */
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.interest-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-height: 76px;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  background: var(--global-bg-color);
+  box-shadow: 0 3px 12px rgba(30, 60, 80, 0.06);
+}
+
+.interest-card strong,
+.interest-card small {
+  display: block;
+}
+
+.interest-card strong {
+  margin-bottom: 0.18rem;
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+}
+
+.interest-card small {
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.interest-icon {
+  display: inline-grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--global-base-color) 12%, transparent);
+  font-size: 1.25rem;
+}
+
+.education-stack,
+.project-stack {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.education-card,
+.content-card {
+  border: 1px solid var(--global-border-color);
+  border-radius: 14px;
+  background: var(--global-bg-color);
+  box-shadow: 0 4px 16px rgba(30, 60, 80, 0.065);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-card:hover,
+.content-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(30, 60, 80, 0.1);
+}
+
+.education-card {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  overflow: hidden;
+}
+
+.school-logo-wrap {
+  display: grid;
+  min-height: 150px;
+  padding: 1rem;
+  place-items: center;
+  border-right: 1px solid var(--global-border-color);
+  background: #fff;
+}
+
+.school-emblem {
+  display: block;
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+}
+
+.card-body,
+.content-card {
+  padding: 1rem 1.1rem;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-top h3,
+.content-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.card-subtitle,
+.authors {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+.publication-card .authors {
+  color: var(--global-text-color);
+}
+
+.card-meta {
+  flex: 0 0 auto;
+  color: var(--global-text-color-light);
+  font-size: 0.74rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.card-body ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+}
+
+.card-body li + li {
+  margin-top: 0.35rem;
+}
+
+.education-description {
+  margin: 0.7rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.content-card p:last-child {
+  margin-bottom: 0;
+}
+
+.card-kicker {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: var(--global-base-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.card-actions {
+  margin-top: 0.75rem;
+}
+
+.card-action {
+  display: inline-block;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--global-link-color);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.award-list {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.award-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.award-list li:last-child {
+  border-bottom: 0;
+}
+
+.award-list span {
+  flex: 0 0 auto;
+  color: var(--global-text-color-light);
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    grid-template-columns: 1fr;
+  }
+
+  .school-logo-wrap {
+    min-height: 100px;
+    border-right: 0;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .card-top {
+    display: block;
+  }
+
+  .card-meta {
+    margin-top: 0.45rem;
+    text-align: left;
+  }
+}
