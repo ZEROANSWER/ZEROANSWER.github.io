@@ -192,6 +192,14 @@
   font-size: $type-size-5;
 }
 
+@include breakpoint($large) {
+  .sidebar .author__content {
+    width: 175px;
+    max-width: 175px;
+    text-align: center;
+  }
+}
+
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: 1024px) {
