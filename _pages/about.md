@@ -15,20 +15,20 @@ I am a rising third-year undergraduate at Xidian University, majoring in **Artif
 
 <div class="interest-grid">
   <div class="interest-card">
-    <span class="interest-icon" aria-hidden="true">🤝</span>
-    <div><strong>Multi-Agent Collaboration</strong><small>Coordination and collective decision-making</small></div>
+    <span class="interest-icon" aria-hidden="true">🧊</span>
+    <div><strong>4D Reconstruction</strong></div>
   </div>
   <div class="interest-card">
     <span class="interest-icon" aria-hidden="true">🤖</span>
-    <div><strong>Embodied Intelligence</strong><small>Perception, reasoning, and interaction</small></div>
+    <div><strong>Embodied Intelligence</strong></div>
   </div>
   <div class="interest-card">
     <span class="interest-icon" aria-hidden="true">🌐</span>
-    <div><strong>World Models</strong><small>Predictive representations of environments</small></div>
+    <div><strong>World Models</strong></div>
   </div>
   <div class="interest-card">
     <span class="interest-icon" aria-hidden="true">✦</span>
-    <div><strong>Large Language Models</strong><small>Reasoning and agentic capabilities</small></div>
+    <div><strong>Large Language Models</strong></div>
   </div>
 </div>
 
