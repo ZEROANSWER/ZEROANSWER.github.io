@@ -32,9 +32,27 @@ I am a rising third-year undergraduate at Xidian University, majoring in **Artif
   </div>
 </div>
 
-## Education {#education}
+## Experiences {#experiences}
+
+<span id="education"></span>
 
 <div class="education-stack">
+  <article class="education-card">
+    <div class="school-logo-wrap">
+      <img class="school-emblem" src="{{ '/images/tsinghua-emblem.svg' | relative_url }}" alt="Tsinghua University emblem">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <div>
+          <h3>Tsinghua University</h3>
+          <p class="card-subtitle">Research Intern</p>
+        </div>
+        <div class="card-meta">Aug. 2026 &ndash; Present</div>
+      </div>
+      <p class="education-description">Conducting research on 4D reconstruction.</p>
+    </div>
+  </article>
+
   <article class="education-card">
     <div class="school-logo-wrap">
       <img class="school-emblem" src="{{ '/images/xidian-emblem.svg' | relative_url }}" alt="Xidian University emblem">

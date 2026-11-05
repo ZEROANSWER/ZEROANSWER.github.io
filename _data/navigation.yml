@@ -11,8 +11,8 @@ main:
   - title: "About"
     url: /#about
 
-  - title: "Education"
-    url: /#education
+  - title: "Experiences"
+    url: /#experiences
 
   - title: "Publication"
     url: /#publication
